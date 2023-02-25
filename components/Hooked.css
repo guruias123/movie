@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.hooked {
+    background-color: rgb(65, 63, 63);
+    color: white;
+}
+
+.movie_box {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* flex-flow: row wrap; */
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 10px;
+    margin-top: 20px;
+
+}
+
+
+
+.every_movie {
+    /* width: 100px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 500px) {
+    .movie_box {
+        flex-direction: column;
+    }
+}
+
